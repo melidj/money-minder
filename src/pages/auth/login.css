@@ -1,0 +1,305 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1440px;
+  height: 720px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.left-login {
+  position: absolute;
+  width: 720px;
+  height: 720px;
+  top: 0;
+  left: 0;
+  background: #6b8068;
+  border-radius: 20px 0 0 20px;
+}
+.dollar-image {
+  position: relative;
+  width: 466px;
+  height: 385px;
+  margin: 63px 0 0 127px;
+  background-size: cover;
+  z-index: 3;
+}
+.welcome-message {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 546px;
+  height: 61px;
+  margin: 9px 0 0 86px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 50.83px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 6;
+}
+.welcome-statement {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 701px;
+  height: 78px;
+  margin: 25px 0 0 9px;
+  margin: 20px auto 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 36.307px;
+  text-align: center;
+  z-index: 5;
+}
+
+.right-login {
+  position: absolute;
+  width: 720px;
+  height: 720px;
+  top: 0;
+  left: 720px;
+  background: #e1e6e1;
+  z-index: 1;
+  border-radius: 0 20px 20px 0;
+}
+.money-minder {
+  display: block;
+  position: relative;
+  height: 68px;
+  margin: 40px 0 0 220px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 50.83px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.login-1 {
+  display: block;
+  position: relative;
+  height: 38px;
+  margin: 13px 0 0 33px;
+  color: #364034;
+  font-family: Inter, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 4;
+}
+
+.username-email,
+.password {
+  display: block;
+  position: relative;
+  height: 30px;
+  margin: 23px 0 0 33px;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 29.045px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+
+.right-login .input-box{
+  width: 100%;
+  height: 30px;
+  background: #E1E6E1;
+  margin: 20px 0;
+  margin-left: 5px;
+}
+.input-box input {
+  width: 90%;
+  height: 90%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #899986;
+  font-size: 16px;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+  font-family: Inter, var(--default-font-family);
+  font-size: 15px; 
+  margin: -10px 10px 0 30px;
+
+}
+.forgot-password label input {
+  accent-color: #000000;
+  margin-right: 4px;
+}
+.forgot-password a {
+  color: #000000;
+  text-decoration: none;
+}
+.forgot-password a:hover {
+  color: #364034;
+  text-decoration: underline;
+}
+
+.login-button {
+  position: absolute;
+  width: 220px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  background: #d8d4b4;
+  border: none;
+  transform: translate(-50%, 2 20%);
+  z-index: 13;
+  border-radius: 50px;
+}
+.login-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 148px;
+  height: 70px;
+  top: calc(50% - 40px);
+  left: calc(50% - 74px);
+  color: #4b5a49;
+  font-family: Inter, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 43.568px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.devicon-google {
+  flex-shrink: 0;
+  position: relative;
+  width: 50px;
+  height: 46px;
+  background-size: cover;
+  z-index: 11;
+  overflow: hidden;
+}
+
+.new-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 132px;
+  height: 39px;
+  top: calc(50% - -280px);
+  left: calc(50% - 123px);
+  color: #364034;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29.045px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.48px;
+  z-index: 19;
+}
+.create-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 231px;
+  height: 29px;
+  top: calc(50% - 15px);
+  left: calc(50% - -10px);
+  color: #2b332a;
+  font-family: Inter, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  text-decoration: underline;
+  white-space: nowrap;
+  letter-spacing: 0.48px;
+}
+.create-account:hover{
+  color: #60735E;
+}
+
+.flex-row-de {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.google {
+  position: absolute;
+  width: 50px;
+  height: 46px;
+  background-size: cover;
+  transform: translate(-242%, 125%);
+  z-index: 11;
+  margin-right: 10px;
+}
+.google img {
+  width: 30px;
+  height: 30px;
+  margin-top: 68px; 
+}
+
+
+.login-with-google {
+  position: absolute;
+  width: 217px;
+  height: 29px;
+  top: calc(50% - -99px);
+  left: calc(50% - 210px);
+  color: #364034;
+  font-family: Inter, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.72px;
+  z-index: 18;
+  cursor: pointer;
+  text-decoration: none; 
+  transition: text-decoration 0.8s ease;
+}
+.login-with-google:hover {
+  text-decoration: underline;
+}
+
